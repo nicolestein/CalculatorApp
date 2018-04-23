@@ -14,8 +14,14 @@ function addDig(dig) {
 // Add a decimal to the current input
 function addDecimal() {
     if (currentInput.length == 0){
+        currentInput = "0.";
+    } else {
+        if currentInput.indexOf(".")==-1{
+            currentInput = currentInput + ".";
+        }
     }
-}
+    displayCurrentInput();
+ }
 
 
 //changing the sign of input
