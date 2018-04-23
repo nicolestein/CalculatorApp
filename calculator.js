@@ -1,7 +1,7 @@
 var currentInput = "0"
 var memory = "0"
 
-// Displaying the current input
+// Display the current input
 function displayCurrentInput() {
     document.getElementById('screen').value = currentInput;
 }
@@ -13,7 +13,6 @@ function addDig(dig) {
 
 // Add a decimal to the current input
 function addDecimal() {
-
+    if (currentInput.length == 0){
+    }
 }
-
-
