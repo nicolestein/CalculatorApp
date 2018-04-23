@@ -7,39 +7,38 @@ function displayCurrentInput() {
 }
 
 // Add a digit to the current digit
-function addDig(dig) {
-}
+function addDig(dig) {}
 
 
 // Add a decimal to the current input
 function addDecimal() {
-    if (currentInput.length == 0){
+    if (currentInput.length == 0) {
         currentInput = "0.";
     } else {
-        if currentInput.indexOf(".")==-1{
+        if currentInput.indexOf(".") == -1 {
             currentInput = currentInput + ".";
         }
     }
     displayCurrentInput();
- }
+}
 
 
 //changing the sign of input
-function changeSign(){
-    currentInput = currentInput*(-1);
+function changeSign() {
+    currentInput = currentInput * (-1);
     displayCurrentInput;
 
 
 }
 // clear button clears back to 0
-function clears(){
+function clears() {
 
 
-currentInput "0";
-displayCurrentInput;
+    currentInput "0";
+    displayCurrentInput;
 }
 //clears everything on display
-function allClear(){
+function allClear() {
     currentInput = "0";
     memory = "0";
     displayCurrentInput;
@@ -47,4 +46,3 @@ function allClear(){
 }
 
 //square of input
-
