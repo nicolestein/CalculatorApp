@@ -1,5 +1,6 @@
 var currentInput = "0"
 var memory = "0"
+var operation = 0;
 
 // Display the current input
 function displayCurrentInput() {
@@ -28,8 +29,9 @@ function changeSign() {
     currentInput = currentInput * (-1);
     displayCurrentInput;
 
-
 }
+
+
 // clear button clears back to 0
 function clears() {
 
@@ -37,6 +39,8 @@ function clears() {
     currentInput "0";
     displayCurrentInput;
 }
+
+
 //clears everything on display
 function allClear() {
     currentInput = "0";
