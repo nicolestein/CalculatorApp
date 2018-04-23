@@ -17,3 +17,26 @@ function addDecimal() {
 }
 
 
+//changing the sign of input
+function changeSign(){
+    currentInput = currentInput*(-1);
+    displayCurrentInput;
+
+
+}
+// clear button clears back to 0
+function clears(){
+
+
+currentInput "0";
+displayCurrentInput;
+}
+//clears everything on display
+function allClear(){
+    currentInput = "0";
+    memory = "0";
+    displayCurrentInput;
+
+}
+
+//square of input
