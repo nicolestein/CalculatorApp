@@ -16,7 +16,6 @@ function addDecimal() {
     if (currentInput.length == 0){
     }
 }
-<<<<<<< HEAD
 
 
 //changing the sign of input
@@ -42,5 +41,4 @@ function allClear(){
 }
 
 //square of input
-=======
->>>>>>> origin/master
+
