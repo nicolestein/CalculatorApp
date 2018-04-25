@@ -23,11 +23,7 @@ function addDecimal() {
     if (currentInput.length == 0) {
         currentInput = "0.";
     } else {
-<<<<<<< HEAD
-        if (currentInput.indexOf(".") == -1) { //FIXXXX
-=======
-        if currentInput.indexOf(".") == -1 { //FIXXXXx
->>>>>>> origin/master
+        if (currentInput.indexOf(".") == -1) {
             currentInput = currentInput + ".";
         }
     }
