@@ -9,10 +9,10 @@ function displayCurrentInput() {
 
 // Add a digit to the current digit
 function addDig(dig) {
-    if ((eval(currentInput) == 0) && (currentInput.indexOf(".")== -1)) {
+    if ((eval(currentInput) == 0) && (currentInput.indexOf(".") == -1)) {
         currentInput = dig;
 
-    } else if (currentInput.length <=11){
+    } else if (currentInput.length <= 11) {
         currentInput = currentInput + dig;
     }
     displayCurrentInput();
@@ -113,3 +113,21 @@ function tanRadian() {
     currentInput = Math.tan(currentInput);
     displayCurrentInput();
 }
+// stores last operaor pushed for mult div add sub
+function storeOperator(op) {
+    if (op.indexOf("*") > -1) {
+        operator = 1;
+    };
+    //code for mult
+    if (op.indexOf("/") > -1) {
+        operator = 2;
+    };
+    //divide
+    if (op.indexOf("+") > -1) {
+        operaor = 3;
+    };
+    // sum
+    if op.indexOf("-") > -1) {
+    operator = 4;
+}; //subtract
+
