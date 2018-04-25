@@ -42,7 +42,7 @@ function changeSign() {
 
 // clear button clears back to 0
 function clears() {
-    currentInput "0";
+    currentInput = "0";
     displayCurrentInput();
 }
 
