@@ -145,7 +145,7 @@ function storeOperator(op) {
         operaor = 3;
     };
     // sum
-    if op.indexOf("-") > -1) {
+    if (op.indexOf("-") > -1) {
     operator = 4;
 }; //subtract
 memory = currentInput;
