@@ -18,7 +18,6 @@ function addDig(dig) {
     displayCurrentInput();
 
 }
-}
 
 // Add a decimal to the current input
 function addDecimal() {
