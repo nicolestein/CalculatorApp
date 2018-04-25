@@ -97,9 +97,19 @@ function inverse() {
 }
 
 // cos function
-
+function cosRadian() {
+    currentInput = Math.cos(currentInput);
+    displayCurrentInput();
+}
 
 // sin function
-
+function sinRadian() {
+    currentInput = Math.sin(currentInput);
+    displayCurrentInput();
+}
 
 // tan function
+function tanRadian() {
+    currentInput = Math.tan(currentInput);
+    displayCurrentInput();
+}
