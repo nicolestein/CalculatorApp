@@ -113,6 +113,25 @@ function tanRadian() {
     currentInput = Math.tan(currentInput);
     displayCurrentInput();
 }
+
+//cos inverse
+function acos() {
+    currentInput = Math.acos(currentInput);
+    displayCurrentInput();
+}
+
+//sin inverse
+function asin() {
+    currentInput = Math.asin(currentInput);
+    displayCurrentInput();
+}
+
+//tan inverse
+function atan() {
+    currentInput = Math.atan(currentInput);
+    displayCurrentInput();
+}
+
 // stores last operaor pushed for mult div add sub
 function storeOperator(op) {
     if (op.indexOf("*") > -1) {
@@ -130,4 +149,3 @@ function storeOperator(op) {
     if op.indexOf("-") > -1) {
     operator = 4;
 }; //subtract
-
