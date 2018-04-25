@@ -9,7 +9,15 @@ function displayCurrentInput() {
 
 // Add a digit to the current digit
 function addDig(dig) {
+    if ((eval(currentInput) == 0) && (currentInput.indexOf(".")== -1)) {
+        currentInput = dig;
 
+    } else if (currentInput.length <=11){
+        currentInput = currentInput + dig;
+    }
+    displayCurrentInput();
+
+}
 }
 
 // Add a decimal to the current input
@@ -53,6 +61,10 @@ function percentage() {
     currentInput = currentInput / 100;
     displayCurrentInput();
 }
+
+
+// basic addition
+
 
 // Calculate the factorial of the current input
 function factorial() {
