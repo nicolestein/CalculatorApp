@@ -8,8 +8,9 @@ function displayCurrentInput() {
 }
 
 // Add a digit to the current digit
-function addDig(dig) {}
+function addDig(dig) {
 
+}
 
 // Add a decimal to the current input
 function addDecimal() {
@@ -34,10 +35,8 @@ function changeSign() {
 
 // clear button clears back to 0
 function clears() {
-
-
     currentInput "0";
-    displayCurrentInput;
+    displayCurrentInput();
 }
 
 
@@ -49,19 +48,6 @@ function allClear() {
 
 }
 
-//square of input
-
-// Change the sign of the current input
-function changeSign() {
-    currentInput = currentInput * (-1);
-    displayCurrentInput();
-}
-
-// Clear the current input back to 0
-function clears() {
-    currentInput = "0";
-    displayCurrentInput();
-}
 
 // Change the current input to a percentage
 function percentage() {
@@ -98,4 +84,12 @@ function inverse() {
 currentInput = 1/currentInput;
 displayCurrentInput();
 }
+
+// cos function
+
+
+// sin function
+
+
+// tan function
 
