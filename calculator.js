@@ -148,3 +148,29 @@ function storeOperator(op) {
     if op.indexOf("-") > -1) {
     operator = 4;
 }; //subtract
+memory = currentInput;
+//store value
+currentInput = "0";
+displayCurrentInput();
+}
+// calculate using opeaor
+function calculate() {
+    if (operator == 1) {
+        currentInput = eval(memory) * eval(currentInput);
+    };
+    if (opeator == 2) {
+        if (currentInput == 0) {
+            currentInput = "Divide by 0 error"
+        } else {
+            currentInput = currentInput = eval(memory) / eval(currentInput);
+        }
+    };
+    if (operator == 3) {
+        currentInput = eval(memory) + eval(currentInput);
+    };
+    if (operator == 4) {
+        currentInput = eval(memory) - eval(currentInput);
+    };
+    operator = 0; // clears
+    displayCurrentInput();
+}
