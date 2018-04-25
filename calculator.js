@@ -24,7 +24,7 @@ function addDecimal() {
     if (currentInput.length == 0) {
         currentInput = "0.";
     } else {
-        if currentInput.indexOf(".") == -1 {
+        if currentInput.indexOf(".") == -1 { //FIXXXX
             currentInput = currentInput + ".";
         }
     }
@@ -42,7 +42,7 @@ function changeSign() {
 
 // clear button clears back to 0
 function clears() {
-    currentInput "0";
+    currentInput = "0";
     displayCurrentInput();
 }
 
@@ -145,7 +145,7 @@ function storeOperator(op) {
         operaor = 3;
     };
     // sum
-    if op.indexOf("-") > -1) {
+    if (op.indexOf("-") > -1) {
     operator = 4;
 }; //subtract
 memory = currentInput;
