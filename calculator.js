@@ -146,12 +146,12 @@ function storeOperator(op) {
     };
     // sum
     if (op.indexOf("-") > -1) {
-    operator = 4;
-}; //subtract
-memory = currentInput;
-//store value
-currentInput = "0";
-displayCurrentInput();
+        operator = 4;
+    }; //subtract
+    memory = currentInput;
+    //store value
+    currentInput = "0";
+    displayCurrentInput();
 }
 // calculate using opeaor
 function calculate() {
