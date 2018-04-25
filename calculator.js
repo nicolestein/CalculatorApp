@@ -24,7 +24,7 @@ function addDecimal() {
     if (currentInput.length == 0) {
         currentInput = "0.";
     } else {
-        if currentInput.indexOf(".") == -1 {
+        if currentInput.indexOf(".") == -1 { //FIXXXX
             currentInput = currentInput + ".";
         }
     }
