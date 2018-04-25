@@ -16,7 +16,6 @@ function addDig(dig) {
         currentInput = currentInput + dig;
     }
     displayCurrentInput();
-
 }
 
 // Add a decimal to the current input
@@ -31,7 +30,6 @@ function addDecimal() {
     displayCurrentInput();
 }
 
-
 //changing the sign of input
 function changeSign() {
     currentInput = currentInput * (-1);
@@ -39,20 +37,17 @@ function changeSign() {
 
 }
 
-
 // clear button clears back to 0
 function clears() {
     currentInput = "0";
     displayCurrentInput();
 }
 
-
 //clears everything on display
 function allClear() {
     currentInput = "0";
     memory = "0";
     displayCurrentInput;
-
 }
 
 // Change the current input to a percentage
@@ -60,10 +55,6 @@ function percentage() {
     currentInput = currentInput / 100;
     displayCurrentInput();
 }
-
-
-// basic addition
-
 
 // Calculate the factorial of the current input
 function factorial() {
@@ -153,6 +144,7 @@ function storeOperator(op) {
     currentInput = "0";
     displayCurrentInput();
 }
+
 // calculate using opeaor
 function calculate() {
     if (operator == 1) {
