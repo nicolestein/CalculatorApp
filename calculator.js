@@ -48,41 +48,40 @@ function allClear() {
 
 }
 
-
 // Change the current input to a percentage
 function percentage() {
- currentInput = currentInput/100;
-displayCurrentInput();
+    currentInput = currentInput / 100;
+    displayCurrentInput();
 }
 
 // Calculate the factorial of the current input
 function factorial() {
-var input = currentInput;
-var x = input;
-for (i = input-1; i > 1; i--) {
-    x = x*i;
-}
-currentInput = x;
-console.log(currentInput);
-displayCurrentInput();
+    var input = currentInput;
+    var x = input;
+    for (i = input - 1; i > 1; i--) {
+        x = x * i;
+    }
+    currentInput = x;
+    console.log(currentInput);
+    displayCurrentInput();
 }
 
 // Calculate the square of the current input
 function square() {
- currentInput = Math.pow(currentInput,2);
+    currentInput = Math.pow(currentInput, 2);
     displayCurrentInput();
 }
 
 // Calculate the square root of the current input
 function squareRoot() {
-   currentInput = Math.sqrt(currentInput);
+    currentInput = Math.sqrt(currentInput);
     displayCurrentInput();
 }
 
 // Calculate the inverse of the current input
 function inverse() {
-currentInput = 1/currentInput;
-displayCurrentInput();
+    currentInput = 1 / currentInput;
+    displayCurrentInput();
 }
 
 // cos function
@@ -92,4 +91,3 @@ displayCurrentInput();
 
 
 // tan function
-
