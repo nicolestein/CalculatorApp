@@ -155,7 +155,7 @@ function storeOperator(op) {
 }
 // calculate using opeaor
 function calculate() {
-    if operator == 1) {
+    if (operator == 1) {
         currentInput = eval(memory) *eval(currentInput); };
     if (opeator == 2){
         if(currentInput ==0) {
@@ -166,10 +166,7 @@ function calculate() {
     if (operator == 3 ) { currentInput = eval(memory)+ eval(currentInput);};
     if (operator == 4 ) {currentInput = eval(memory)- eval (currentInput); };
     operator = 0; // clears
-    operator memory = "0"; //clears memory
     displayCurrentInput();
         }
-        }
-    }
-    }
+
 
