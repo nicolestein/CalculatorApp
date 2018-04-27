@@ -8,7 +8,7 @@ function displayCurrentInput() {
 }
 
 // Add a digit to the current digit
-function addDig(dig) {
+function addDigit(dig) {
     if ((eval(currentInput) == 0) && (currentInput.indexOf(".") == -1)) {
         currentInput = dig;
 
@@ -136,9 +136,6 @@ function storeOperator(op) {
     if (op.indexOf("-") > -1) {
         operator = 4;
     };
-    if (op.indexOf("^") > -1) {
-        operator = 5;
-    };
     memory = currentInput;
     //store value
     currentInput = "0";
@@ -162,9 +159,6 @@ function calculate() {
     };
     if (operator == 4) {
         currentInput = eval(memory) - eval(currentInput);
-    };
-    if (operator == 5) {
-        currentInput = Math.pow(eval(memory), eval(currentInput));
     };
     operator = 0; // clears
     displayCurrentInput();
