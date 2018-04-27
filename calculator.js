@@ -22,11 +22,9 @@ function addDig(dig) {
 function addDecimal() {
     if (currentInput.length == 0) {
         currentInput = "0.";
-    } else {
-        if (currentInput.indexOf(".") == -1) {
+    } else if (currentInput.indexOf(".") == -1) {
             currentInput = currentInput + ".";
         }
-    }
     displayCurrentInput();
 }
 
@@ -34,7 +32,6 @@ function addDecimal() {
 function changeSign() {
     currentInput = currentInput * (-1);
     displayCurrentInput;
-
 }
 
 // clear button clears back to 0
@@ -127,7 +124,7 @@ function storeOperator(op) {
     if (op.indexOf("*") > -1) {
         operator = 1;
     };
-    //code for mult
+    //multiply
     if (op.indexOf("/") > -1) {
         operator = 2;
     };
@@ -135,17 +132,18 @@ function storeOperator(op) {
     if (op.indexOf("+") > -1) {
         operaor = 3;
     };
-    // sum
+    //addition
     if (op.indexOf("-") > -1) {
         operator = 4;
-    }; //subtract
+    };
+    //subtraction
     memory = currentInput;
     //store value
     currentInput = "0";
     displayCurrentInput();
 }
 
-// calculate using opeaor
+// calculate using operator
 function calculate() {
     if (operator == 1) {
         currentInput = eval(memory) * eval(currentInput);
