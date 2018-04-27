@@ -164,7 +164,7 @@ function calculate() {
         currentInput = eval(memory) - eval(currentInput);
     };
     if (operator == 5) {
-        currentInput = Math.pow(eval(memory),eval(currentInput));
+        currentInput = Math.pow(eval(memory), eval(currentInput));
     };
     operator = 0; // clears
     displayCurrentInput();
