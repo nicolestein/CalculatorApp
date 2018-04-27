@@ -23,8 +23,8 @@ function addDecimal() {
     if (currentInput.length == 0) {
         currentInput = "0.";
     } else if (currentInput.indexOf(".") == -1) {
-            currentInput = currentInput + ".";
-        }
+        currentInput = currentInput + ".";
+    }
     displayCurrentInput();
 }
 
@@ -136,7 +136,9 @@ function storeOperator(op) {
     if (op.indexOf("-") > -1) {
         operator = 4;
     };
-    //subtraction
+    if (op.indexOf("^") > -1) {
+        operator = 5;
+    };
     memory = currentInput;
     //store value
     currentInput = "0";
@@ -160,6 +162,9 @@ function calculate() {
     };
     if (operator == 4) {
         currentInput = eval(memory) - eval(currentInput);
+    };
+    if (operator == 5) {
+        currentInput = Math.pow(eval(memory),eval(currentInput));
     };
     operator = 0; // clears
     displayCurrentInput();
