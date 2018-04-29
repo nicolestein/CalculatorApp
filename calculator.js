@@ -1,6 +1,6 @@
 var currentInput = "0"
 var memory = "0"
-var operation = 0;
+var operator = 0;
 
 // Display the current input
 function displayCurrentInput() {
@@ -22,8 +22,10 @@ function addDigit(dig) {
 function addDecimal() {
     if (currentInput.length == 0) {
         currentInput = "0.";
-    } else if (currentInput.indexOf(".") == -1) {
+    } else {
+        if (currentInput.indexOf(".") == -1) {
         currentInput = currentInput + ".";
+    }
     }
     displayCurrentInput();
 }
@@ -35,7 +37,7 @@ function changeSign() {
 }
 
 // clear button clears back to 0
-function clears() {
+function clear() {
     currentInput = "0";
     displayCurrentInput();
 }
@@ -43,8 +45,9 @@ function clears() {
 //clears everything on display
 function allClear() {
     currentInput = "0";
+    operator = 0;
     memory = "0";
-    displayCurrentInput;
+    displayCurrentInput();
 }
 
 // Change the current input to a percentage
@@ -137,7 +140,6 @@ function storeOperator(op) {
         operator = 4;
     };
     memory = currentInput;
-    //store value
     currentInput = "0";
     displayCurrentInput();
 }
@@ -160,6 +162,7 @@ function calculate() {
     if (operator == 4) {
         currentInput = eval(memory) - eval(currentInput);
     };
-    operator = 0; // clears
+    operator = 0;
+    memory = "0";
     displayCurrentInput();
 }
