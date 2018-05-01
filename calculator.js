@@ -3,7 +3,7 @@ var memory = "0"
 var Operator = 0;
 
 // Display the current input
-// Written by Olivia Hardwidge
+// Written by Nicole Stein
 function displayCurrentInput() {
     document.getElementById('screen').value = currentInput;
 }
