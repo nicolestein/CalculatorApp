@@ -3,11 +3,13 @@ var memory = "0"
 var operator = 0;
 
 // Display the current input
+// Written by Olivia Hardwidge
 function displayCurrentInput() {
     document.getElementById('screen').value = currentInput;
 }
 
 // Add a digit to the current digit
+// Written by Olivia Hardwidge
 function addDigit(dig) {
     if ((eval(currentInput) == 0) && (currentInput.indexOf(".") == -1)) {
         currentInput = dig;
@@ -19,6 +21,7 @@ function addDigit(dig) {
 }
 
 // Add a decimal to the current input
+// Written by Olivia Hardwidge
 function addDecimal() {
     if (currentInput.length == 0) {
         currentInput = "0.";
@@ -31,18 +34,21 @@ function addDecimal() {
 }
 
 //changing the sign of input
+// Written by Nicole Stein
 function changeSign() {
     currentInput = currentInput * (-1);
     displayCurrentInput;
 }
 
 // clear button clears back to 0
-function clear() {
+// Written by Nicole Stein
+function clears() {
     currentInput = "0";
     displayCurrentInput();
 }
 
 //clears everything on display
+// Written by Nicole Stein
 function allClear() {
     currentInput = "0";
     operator = 0;
@@ -51,13 +57,14 @@ function allClear() {
 }
 
 // Change the current input to a percentage
+// Written by Nicole Stein
 function percentage() {
     currentInput = currentInput / 100;
     displayCurrentInput();
 }
 
-// Calculate the factorial of the current input
-function factorial() {
+// Calculate the factor of the current input
+function factor() {
     var input = currentInput;
     var x = input;
     for (i = input - 1; i > 1; i--) {
@@ -69,60 +76,70 @@ function factorial() {
 }
 
 // Calculate the square of the current input
+// Written by Nicole Stein
 function square() {
     currentInput = Math.pow(currentInput, 2);
     displayCurrentInput();
 }
 
 // Calculate the square root of the current input
+// Written by Nicole Stein
 function squareRoot() {
     currentInput = Math.sqrt(currentInput);
     displayCurrentInput();
 }
 
 // Calculate the inverse of the current input
+// Written by Nicole Stein
 function inverse() {
     currentInput = 1 / currentInput;
     displayCurrentInput();
 }
 
 // cos function
+// Written by Nicole Stein
 function cosRadian() {
     currentInput = Math.cos(currentInput);
     displayCurrentInput();
 }
 
 // sin function
+// Written by Nicole Stein
 function sinRadian() {
     currentInput = Math.sin(currentInput);
     displayCurrentInput();
 }
 
 // tan function
+// Written by Nicole Stein
 function tanRadian() {
     currentInput = Math.tan(currentInput);
     displayCurrentInput();
 }
 
 //cos inverse
+// Written by Nicole Stein
 function acos() {
     currentInput = Math.acos(currentInput);
     displayCurrentInput();
 }
 
 //sin inverse
+// Written by Nicole Stein
 function asin() {
     currentInput = Math.asin(currentInput);
     displayCurrentInput();
 }
 
 //tan inverse
+// Written by Nicole Stein
 function atan() {
     currentInput = Math.atan(currentInput);
     displayCurrentInput();
 }
 
 // stores last operaor pushed for mult div add sub
+// Written by Olivia Hardwidge
 function storeOperator(op) {
     if (op.indexOf("*") > -1) {
         operator = 1;
@@ -145,6 +162,7 @@ function storeOperator(op) {
 }
 
 // calculate using operator
+// Written by Olivia Hardwidge
 function calculate() {
     if (operator == 1) {
         currentInput = eval(memory) * eval(currentInput);
