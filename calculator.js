@@ -1,6 +1,6 @@
 var currentInput = "0"
 var memory = "0"
-var operator = 0;
+var Operator = 0;
 
 // Display the current input
 // Written by Olivia Hardwidge
@@ -51,7 +51,7 @@ function clears() {
 // Written by Nicole Stein
 function allClear() {
     currentInput = "0";
-    operator = 0;
+    Operator = 0;
     memory = "0";
     displayCurrentInput();
 }
@@ -60,18 +60,6 @@ function allClear() {
 // Written by Nicole Stein
 function percentage() {
     currentInput = currentInput / 100;
-    displayCurrentInput();
-}
-
-// Calculate the factor of the current input
-function factor() {
-    var input = currentInput;
-    var x = input;
-    for (i = input - 1; i > 1; i--) {
-        x = x * i;
-    }
-    currentInput = x;
-    console.log(currentInput);
     displayCurrentInput();
 }
 
@@ -142,19 +130,19 @@ function atan() {
 // Written by Olivia Hardwidge
 function storeOperator(op) {
     if (op.indexOf("*") > -1) {
-        operator = 1;
+        Operator = 1;
     };
     //multiply
     if (op.indexOf("/") > -1) {
-        operator = 2;
+        Operator = 2;
     };
     //divide
     if (op.indexOf("+") > -1) {
-        operaor = 3;
+        Operaor = 3;
     };
     //addition
     if (op.indexOf("-") > -1) {
-        operator = 4;
+        Operator = 4;
     };
     memory = currentInput;
     currentInput = "0";
@@ -164,23 +152,23 @@ function storeOperator(op) {
 // calculate using operator
 // Written by Olivia Hardwidge
 function calculate() {
-    if (operator == 1) {
+    if (Operator == 1) {
         currentInput = eval(memory) * eval(currentInput);
     };
-    if (opeator == 2) {
+    if (Operator == 2) {
         if (currentInput == 0) {
             currentInput = "Divide by 0 error"
         } else {
             currentInput = currentInput = eval(memory) / eval(currentInput);
         }
     };
-    if (operator == 3) {
+    if (Operator == 3) {
         currentInput = eval(memory) + eval(currentInput);
     };
-    if (operator == 4) {
+    if (Operator == 4) {
         currentInput = eval(memory) - eval(currentInput);
     };
-    operator = 0;
+    Operator = 0;
     memory = "0";
     displayCurrentInput();
 }
